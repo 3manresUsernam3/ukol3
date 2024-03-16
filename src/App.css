@@ -1,0 +1,87 @@
+:root {
+  --background-color: #2c3e50; /* Dark blue */
+  --text-color: #fff; /* White */
+  --input-background: #34495e; /* Dark blue */
+  --placeholder-color: #ccd1d9; /* Light blue-gray */
+  --button-background: #3498db; /* Blue */
+  --button-hover: #2980b9; /* Darker blue */
+  --task-background: #34495e; /* Dark blue */
+  --button-remove: #e74c3c; /* Red */
+  --button-remove-hover: #c0392b; /* Darker red */
+}
+
+html{
+  background-color: var(--background-color);
+}
+
+.App {
+  padding: 20px;
+  flex-grow: 1;
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.task-input input {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--input-background);
+  color: var(--text-color);
+}
+
+.task-input input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.task-input button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-background);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+  background-color: var(--button-hover);
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+  background-color: var(--task-background);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li span {
+  color: var(--text-color);
+}
+
+.task-list li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-remove);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-list li button:hover {
+  background-color: var(--button-remove-hover);
+}
